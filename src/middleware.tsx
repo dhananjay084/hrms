@@ -10,13 +10,13 @@ export async function middleware(request: Request) {
     return NextResponse.next();
   }
 
-  if (url.pathname !== '/Login') {
-    return NextResponse.redirect(new URL('/Login', request.url));
+  if (url.pathname !== 'https://dashboard-rose-ten-79.vercel.app/Login') {
+    return NextResponse.redirect(new URL('https://dashboard-rose-ten-79.vercel.app/Login', request.url));
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/','/users','/employee','/employee/:path'], 
+  matcher: ['https://dashboard-rose-ten-79.vercel.app/','https://dashboard-rose-ten-79.vercel.app/users','https://dashboard-rose-ten-79.vercel.app/employee','https://dashboard-rose-ten-79.vercel.app/employee/:path'], 
 };
