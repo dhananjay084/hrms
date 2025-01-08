@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      borderColor:{
+        grey:'#808080'
+      },
+      borderRadius:{
+        mid:'12px'
+      }
     },
   },
   plugins: [],
